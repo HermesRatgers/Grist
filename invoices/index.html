@@ -53,9 +53,9 @@
               </template>
               <template v-else>
                 <div class="address">
-                  <span class="name">{{ business.Naam }}</span><br />
-                  {{ business.Straat }}<br />
-                  {{ business.Postcode }} {{ business.Plaats }}<br />
+                  <span class="name">{{ business.Name }}</span><br />
+                  {{ business.Street1 }}<br />
+                  {{ business.Zip }} {{ business.City }}<br />
                 </div>
                 <template v-if="business.Email">
                   <div class="email">{{ business.Email }}</div>
@@ -148,7 +148,7 @@
             <div class="help-close">
               Vul <span class="column-name">vervaldatum</span> or <span class="column-name">Datum</span> in om deze help te laten verwijderen.
             </div>
-            <div class="title">Kolum informatie</div>
+            <div class="title">Kolom informatie</div>
             <div class="details">
               <table>
                 <tr v-for="group in ['herkend', 'verwacht', 'genegeerd']">
