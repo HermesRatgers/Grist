@@ -40,16 +40,16 @@ function addDemo(row) {
   if (!row.Items) {
     row.Items = [
       {
-        Description: 'Items[0].Artikel',
-        Quantity: '.Aantal',
-        Total: '.Totaal',
-        Price: '.Prijs',
+        Description: 'Items[0].Description',
+        Quantity: '.Quantity',
+        Total: '.Total',
+        Price: '.Price',
       },
       {
-        Description: 'Items[1].Artikel',
-        Quantity: '.Aantal',
-        Total: '.Totaal',
-        Price: '.Prijs',
+        Description: 'Items[1].Description',
+        Quantity: '.Quantity',
+        Total: '.Total',
+        Price: '.Price',
       },
     ];
   }
