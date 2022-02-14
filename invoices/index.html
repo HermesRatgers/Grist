@@ -78,16 +78,11 @@
               <div class="newlined">{{ business }}</div>
             </template>
             <template v-else>
-              <div>{{ business.Name }}</div>
-              <template v-if="business.Street1">
-                {{ business.Street1 }},
+              <div>{{ relaties.Naam }}</div>
+              <template v-if="relaties.Street1">
+                {{ relaties.Straat }},
               </template>
-              <template v-if="business.Street2">
-                {{ business.Street2 }},
-              </template>
-              {{ business.City }} {{ business.State }} {{ business.Zip }}
-              <template v-if="business.Country">
-                <br />{{ business.Country }}
+              {{ relaties.Postcode }} {{ relaties.Plaats }}
               </template>
             </template>
           </div>
@@ -112,10 +107,10 @@
               <th class="money">Totaal</th>
             </tr>
             <tr v-for="item in invoice.Items">
-              <td>{{ item.Description }}</td>
-              <td class="money">{{ item.Price | currency }}</td>
-              <td class="number">{{ item.Quantity }}</td>
-              <td class="money">{{ item.Total | currency }}</td>
+              <td>{{ artikelen.Artikel }}</td>
+              <td class="money">{{ artikelen.Prijs | currency }}</td>
+              <td class="number">{{ artikelen.Aantal }}</td>
+              <td class="money">{{ artikelen.Totaal | currency }}</td>
             </tr>
           </template>
         </table>
