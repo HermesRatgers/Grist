@@ -71,7 +71,7 @@
           </div>
         </div>
         
-        <div class="client" v-for="business in (invoice.Client ? [invoice.Client] : [])">
+        <div class="client" v-for="business in (invoice.Klant ? [invoice.Klant] : [])">
           <div class="title">Factuur aan</div>
           <div class="details">
             <template v-if="typeof(business) === 'string'">
@@ -83,7 +83,6 @@
                 {{ business.Straat }},
               </template>
               {{ business.Postcode }} {{ business.Plaats }}
-              </template>
             </template>
           </div>
         </div>
@@ -134,8 +133,8 @@
           </div>
         </div>
 
-        <template v-if="invoice.Note">
-          <p class="note">{{ invoice.Note }}</p>
+        <template v-if="invoice.Notitie">
+          <p class="note">{{ invoice.Notitie }}</p>
         </template>
 
         <template v-for="help in (invoice.Help ? [invoice.Help] : [])">
