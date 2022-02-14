@@ -86,7 +86,7 @@ table.items td {
 }
 
 .name {
-  color: #000080;
+  color: #7aa37a;
 }
 
 .address {
@@ -124,7 +124,7 @@ div.summary .part {
 div.summary .total {
   display: block;
   flex-grow: 1;
-  background: #000080;
+  background: black;
   font-size: 140%;
 }
 
@@ -285,7 +285,7 @@ div.column-name {
 .status .button {
   display: inline-block;
   text-decoration: none;
-  color: #000080;
+  color: #7aa37a;
   background: #ddd;
   padding-left: 0.5em;
   padding-right: 0.5em;
