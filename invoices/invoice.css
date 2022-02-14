@@ -28,7 +28,7 @@ body {
 }
 
 .supplier {
-  color: #4682B4;
+  color: #7aa37a;
   display: block;
 }
 
@@ -198,7 +198,7 @@ div.print a {
 }
 
 div.print a:hover {
-  background: #4682B4;
+  background: #7aa37a;
 }
 
 .done {
