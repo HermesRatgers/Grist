@@ -6,7 +6,7 @@ body {
 }
 
 .meta {
-  color: #ff8000;
+  color: #7aa37a;
 }
 
 .header .title {
@@ -59,7 +59,7 @@ body {
 
 table.items {
   width: 100%;
-  border: 1px solid #ff8000;
+  border: 1px solid #7aa37a;
   border-collapse: collapse;
 }
 
