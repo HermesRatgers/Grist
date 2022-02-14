@@ -4,15 +4,15 @@ const exampleData = {
   Due: Date.parse('2020-11-12') / 1000,
 
   Invoicer: {
-    Name: 'Thunderous Applause',
-    Street1: '812 Automated Rd',
+    Name: 'HeRa Finance',
+    Street1: 'Nieuwstraat 21',
     Street2: null,
-    City: 'New York',
-    State: 'NY',
-    Zip: '10003',
-    Email: 'applause@thunder.com',
-    Phone: '+1-800-111-1111',
-    Website: 'applause.com',
+    City: 'Vroomshoop',
+    State: 'Overijssel',
+    Zip: '7681EP',
+    Email: 'info@herafinance.nl',
+    Phone: '+31 0546 646026',
+    Website: 'herafinance.nl',
   },
 
   Client: {
