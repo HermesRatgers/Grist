@@ -96,8 +96,8 @@
         <table class="items">
           <template v-if="!Array.isArray(invoice.Items)">
             <tr>
-              <th>Description</th>
-              <th class="money">Total</th>
+              <th>Geleverd</th>
+              <th class="money">Totaal</th>
             </tr>
             <tr>
               <td>{{ invoice.Items }}</td>
@@ -106,10 +106,10 @@
           </template>
           <template v-else>
             <tr>
-              <th>Description</th>
-              <th class="money">Unit Price</th>
-              <th class="number">Quantity</th>
-              <th class="money">Total</th>
+              <th>Geleverd</th>
+              <th class="money">Prijs per stuk</th>
+              <th class="number">Aantal</th>
+              <th class="money">Totaal</th>
             </tr>
             <tr v-for="item in invoice.Items">
               <td>{{ item.Description }}</td>
