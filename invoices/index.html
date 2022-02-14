@@ -53,12 +53,12 @@
               </template>
               <template v-else>
                 <div class="address">
-                  <span class="name">{{ business.Name }}</span><br />
-                  {{ business.Street1 }}<br />
+                  <span class="name">{{ Relaties.Naam }}</span><br />
+                  {{ Relaties.Straat }}<br />
                   <template v-if="business.Street2">
                     {{ business.Street2 }}<br />
                   </template>
-                  {{ business.City }} {{ business.State }} {{ business.Zip }}<br />
+                  {{ Relaties.Postcode }} {{ Relaties.Plaats }}<br />
                   <template v-if="business.Country">
                     {{ business.Country }}<br />
                   </template>
@@ -78,7 +78,7 @@
         </div>
         
         <div class="client" v-for="business in (invoice.Client ? [invoice.Client] : [])">
-          <div class="title">Client</div>
+          <div class="title">Factuur aan</div>
           <div class="details">
             <template v-if="typeof(business) === 'string'">
               <div class="newlined">{{ business }}</div>
