@@ -53,15 +53,9 @@
               </template>
               <template v-else>
                 <div class="address">
-                  <span class="name">{{ relaties.Naam }}</span><br />
-                  {{ Relaties.Straat }}<br />
-                  <template v-if="business.Street2">
-                    {{ business.Street2 }}<br />
-                  </template>
-                  {{ Relaties.Postcode }} {{ Relaties.Plaats }}<br />
-                  <template v-if="business.Country">
-                    {{ business.Country }}<br />
-                  </template>
+                  <span class="name">{{ business.Naam }}</span><br />
+                  {{ business.Straat }}<br />
+                  {{ business.Postcode }} {{ business.Plaats }}<br />
                 </div>
                 <template v-if="business.Email">
                   <div class="email">{{ business.Email }}</div>
