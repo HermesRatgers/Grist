@@ -31,27 +31,25 @@ function addDemo(row) {
   }
   if (!row.Client) {
     row.Client = {
-      Name: 'Client.Name',
-      Street1: 'Client.Street1',
-      Street2: 'Client.Street2',
-      City: 'Client.City',
-      State: '.State',
-      Zip: '.Zip'
+      Name: 'Client.Naam',
+      Street1: 'Client.Straat',
+      City: 'Client.Plaats',
+      Zip: '.Postcode'
     }
   }
   if (!row.Items) {
     row.Items = [
       {
-        Description: 'Items[0].Description',
-        Quantity: '.Quantity',
-        Total: '.Total',
-        Price: '.Price',
+        Description: 'Items[0].Artikel',
+        Quantity: '.Aantal',
+        Total: '.Totaal',
+        Price: '.Prijs',
       },
       {
-        Description: 'Items[1].Description',
-        Quantity: '.Quantity',
-        Total: '.Total',
-        Price: '.Price',
+        Description: 'Items[1].Artikel',
+        Quantity: '.Aantal',
+        Total: '.Totaal',
+        Price: '.Prijs',
       },
     ];
   }
