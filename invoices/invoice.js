@@ -168,8 +168,8 @@ function updateInvoice(row) {
     addDemo(row);
     if (!row.Subtotal && !row.Total && row.Items && Array.isArray(row.Items)) {
       try {
-        row.Subtotal = row.Items.reduce((a, b) => a + b.Price * b.Quantity, 0);
-        row.Total = row.Subtotal;
+        row.Subtotal = row.Items.reduce((a, b) => a + b.Prijs * b.Aantal, 0);
+        row.Totaal = row.Subtotal;
       } catch (e) {
         console.error(e);
       }
